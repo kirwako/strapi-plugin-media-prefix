@@ -11,9 +11,7 @@ Prepend media urls (images, files, audios, ) with your public url/media prefix o
 
 ```bash
 npm install strapi-plugin-media-prefix
-
 # or
-
 yarn add strapi-plugin-media-prefix
 ```
 
@@ -35,9 +33,9 @@ or in the file: `./config/plugins.js`
 
 ```js
 module.exports = {
-	'media-prefix': {
-		enabled: true,
-	},
+  'media-prefix': {
+    enabled: true,
+  },
 };
 ```
 
