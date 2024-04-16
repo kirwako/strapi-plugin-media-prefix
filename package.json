@@ -1,0 +1,38 @@
+{
+	"name": "strapi-plugin-media-prefix",
+	"version": "1.0.0",
+	"description": "Prepend media urls (images, files, audios, ) with your public url/media prefix on both Admin Panel and API's",
+	"strapi": {
+		"name": "media-prefix",
+		"displayName": "Media Prefix",
+		"description": "Prepend media urls (images, files, audios, ) with your public url/media prefix on both Admin Panel and API's",
+		"kind": "plugin"
+	},
+	"devDependencies": {
+		"typescript": "5.0.4"
+	},
+	"peerDependencies": {
+		"@strapi/strapi": "^4.20.0"
+	},
+	"author": {
+		"name": "kirwako",
+		"email": "me@kirwako.com",
+		"url": "https://kirwako.com"
+	},
+	"maintainers": [
+		{
+			"name": "kirwako",
+			"email": "me@kirwako.com",
+			"url": "https://kirwako.com"
+		}
+	],
+	"engines": {
+		"node": ">=18.0.0 <=20.x.x",
+		"npm": ">=6.0.0"
+	},
+	"scripts": {
+		"develop": "tsc -p tsconfig.server.json -w",
+		"build": "tsc -p tsconfig.server.json"
+	},
+	"license": "MIT"
+}
