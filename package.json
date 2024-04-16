@@ -2,18 +2,28 @@
 	"name": "strapi-plugin-media-prefix",
 	"version": "1.0.0",
 	"description": "Prepend media urls (images, files, audios, ) with your public url/media prefix on both Admin Panel and API's",
-	"strapi": {
-		"name": "media-prefix",
-		"displayName": "Media Prefix",
-		"description": "Prepend media urls (images, files, audios, ) with your public url/media prefix on both Admin Panel and API's",
-		"kind": "plugin"
+	"keywords": [
+		"strapi",
+		"strapi-plugin",
+		"cdn-prefix",
+		"media-prefix",
+		"media-url",
+		"public-url",
+		"public-url-prefix",
+		"media-url-prefix",
+		"absolute-url",
+		"absolute-url-prefix",
+		"media-absolute-path",
+		"absolute-path"
+	],
+	"bugs": {
+		"url": "https://github.com/kirwako/strapi-plugin-media-prefix/issues"
 	},
-	"devDependencies": {
-		"typescript": "5.0.4"
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kirwako/strapi-plugin-media-prefix"
 	},
-	"peerDependencies": {
-		"@strapi/strapi": "^4.20.0"
-	},
+	"license": "MIT",
 	"author": {
 		"name": "kirwako",
 		"email": "me@kirwako.com",
@@ -26,13 +36,24 @@
 			"url": "https://kirwako.com"
 		}
 	],
+	"scripts": {
+		"build": "tsc -p tsconfig.server.json",
+		"develop": "tsc -p tsconfig.server.json -w"
+	},
+	"devDependencies": {
+		"typescript": "5.0.4"
+	},
+	"peerDependencies": {
+		"@strapi/strapi": "^4.20.0"
+	},
 	"engines": {
 		"node": ">=18.0.0 <=20.x.x",
 		"npm": ">=6.0.0"
 	},
-	"scripts": {
-		"develop": "tsc -p tsconfig.server.json -w",
-		"build": "tsc -p tsconfig.server.json"
-	},
-	"license": "MIT"
+	"strapi": {
+		"name": "media-prefix",
+		"displayName": "Media Prefix",
+		"description": "Prepend media urls (images, files, audios, ) with your public url/media prefix on both Admin Panel and API's",
+		"kind": "plugin"
+	}
 }
