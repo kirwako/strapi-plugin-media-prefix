@@ -2,6 +2,8 @@
 
 Prepend media urls (images, files, audios, ) with your public url/media prefix on both Admin Panel and API's
 
+![Prepend media url Screenshot](https://github.com/kirwako/strapi-plugin-media-prefix/blob/main/screenshots/screenshot-1.jpg)
+
 # ⚙️ Installation
 
 ```bash
