@@ -1,5 +1,8 @@
-# Strapi Media Prefix Plugin
+<p align="center">
+  <img src="https://github.com/kirwako/strapi-plugin-media-prefix/blob/main/screenshots/logo.svg" alt="strapi media prefix plugin Logo">
+</p>
 
+# Strapi Media Prefix Plugin
 Prepend media urls (images, files, audios, ) with your public url/media prefix on both Admin Panel and API's
 
 ![Prepend media url Screenshot](https://github.com/kirwako/strapi-plugin-media-prefix/blob/main/screenshots/screenshot-1.jpg)
