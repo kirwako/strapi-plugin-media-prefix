@@ -15,12 +15,12 @@ npm install strapi-plugin-media-prefix
 yarn add strapi-plugin-media-prefix
 ```
 
-# ✒️ Configuration
+# ✒️ Plugin Configuration
 
 Enable the plugin by adding the following lines of code in the file: `./config/plugins.ts`
 
 ```ts
-
+// ./config/plugins.ts
 export default () => ({
   "media-prefix": {
     enabled: true,
@@ -32,6 +32,7 @@ export default () => ({
 or in the file: `./config/plugins.js`
 
 ```js
+// ./config/plugins.js
 module.exports = {
   'media-prefix': {
     enabled: true,
@@ -39,13 +40,29 @@ module.exports = {
 };
 ```
 
-# 🌐 Server Config
+# 🌐 Environment Configuration
 
-The plugin get the public url/media prefix from the server config file: `./config/server.ts`
+The plugin can get the public url/media prefix from the `.env` file or from the server config file: `./config/server.ts` if you don't define the `MEDIA_PREFIX` key in the `.env` file
+
+# 🔧 Using .env file for environment configuration
+The plugin get the public url/media prefix from `.env` file using the key `MEDIA_PREFIX`
+
+so be sure to add `MEDIA_PREFIX` key in the `.env` file
+
+```bash
+#.env
+MEDIA_PREFIX=https://kirwako.com/media
+```
+
+# 🚀 Using ./config/server.ts file for environment configuration
+
+The plugin can also get the public url/media prefix from the server config file: `./config/server.ts` if you don't define the `MEDIA_PREFIX` key in the `.env` file
+
 so be sure to add url key in the server config file
 
 in the file: `./config/server.ts`
 ```ts
+// ./config/server.ts
 export default ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
@@ -60,6 +77,7 @@ export default ({ env }) => ({
 or in the file: `./config/server.js`
 
 ```js
+// ./config/server.js
 module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
@@ -71,7 +89,6 @@ module.exports = ({ env }) => ({
 ```
 
 # Support
-#### This package costs me time to make and maintain every time.
-[I am very 😀 about every coffee!]
+### I am very Happy 😀 about every coffee!
 
-<a href="https://www.buymeacoffee.com/imranbaali" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a href="https://bit.ly/media-prefix-strapi-plugin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="41" width="174"></a>
