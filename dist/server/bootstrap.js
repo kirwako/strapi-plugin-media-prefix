@@ -5,10 +5,10 @@ exports.default = ({ strapi }) => {
     const plugin = strapi.plugin("media-prefix").service("mediaService");
     (_a = strapi.db) === null || _a === void 0 ? void 0 : _a.lifecycles.subscribe({
         afterFindOne(event) {
-            event = plugin.addMediaPrefix(event);
+            event.result = plugin.addMediaPrefix(event.result);
         },
         afterFindMany(event) {
-            event = plugin.addMediaPrefix(event);
+            event.result = plugin.addMediaPrefix(event.result);
         },
     });
 };
