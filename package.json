@@ -44,7 +44,7 @@
 		"typescript": "5.0.4"
 	},
 	"peerDependencies": {
-		"@strapi/strapi": "^4.20.0"
+		"@strapi/strapi": ">=3.0.0"
 	},
 	"engines": {
 		"node": ">=18.0.0 <=20.x.x",
