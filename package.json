@@ -1,6 +1,6 @@
 {
 	"name": "strapi-plugin-media-prefix",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Prepend media urls (images, files, audios, ) with your public url/media prefix on both Admin Panel and API's just in response without changing the relative path in database",
 	"keywords": [
 		"strapi",
